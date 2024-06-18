@@ -1,3 +1,7 @@
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -5,6 +9,9 @@ body {
     padding: 0;
     background: #022160;
     color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
 }
 
 header {
@@ -12,6 +19,8 @@ header {
     color: #f5f5f5;
     padding: 1rem 0;
     text-align: center;
+    max-width: 100%;
+    overflow: hidden; /* Impede conteúdo de ultrapassar a largura */
 }
 
 nav ul {
@@ -36,6 +45,8 @@ section {
     background: #3a3a3c;
     border-radius: 8px;
     color: #f5f5f5;
+    max-width: 100%;
+    overflow: hidden; /* Impede conteúdo de ultrapassar a largura */
 }
 
 .project {
@@ -66,6 +77,7 @@ section {
     width: 100%; /* Garante que a imagem ocupe todo o espaço dentro de .project-image */
     height: 100%; /* Garante que a imagem ocupe todo o espaço dentro de .project-image */
     object-fit: cover; /* Mantém proporções e corta a imagem para preencher o espaço */
+    border-radius: 8px; /* Arredondar bordas da imagem */
 }
 
 .project-info {
@@ -103,9 +115,10 @@ section {
         height: auto; /* Altura automática para manter a proporção */
         margin-bottom: 10px; /* Espaçamento abaixo da imagem em telas menores */
         border-radius: 8px 8px 0 0; /* Arredondar bordas apenas no topo em telas menores */
+        overflow: hidden; /* Esconder partes da imagem que ultrapassem o container */
     }
 
-    .project-info {
+    .project-content {
         padding: 20px; /* Espaçamento interno para o conteúdo em telas menores */
         border-radius: 0 0 8px 8px; /* Arredondar bordas apenas na parte inferior em telas menores */
         background-color: #ffffff; /* Fundo branco para separar visualmente os projetos */
@@ -114,13 +127,13 @@ section {
 
 footer {
     text-align: center;
-    padding: 0.5rem; /* Ajustado para melhor legibilidade */
+    padding: 10px; /* Ajustado para melhor legibilidade */
     background: #1e1e1e;
     color: #f5f5f5;
-    position: fixed;
+    margin-top: auto; /* Empurra o footer para o final do conteúdo */
     bottom: 0;
-    width: 100%;
-    font-size: 0.8rem;
+    max-width: 100%;
+    font-size: 0.8rem;    
 }
 
 /* Reset de margens e paddings */
@@ -135,4 +148,30 @@ footer {
     width: 40px; /* Definir largura dos ícones */
     height: auto; /* Altura automática para manter proporção */
     margin-right: 10px; /* Margem à direita para separar os ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente */
+}
+
+/* Botão */
+#btnTopo {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 12px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#btnTopo img {
+    width: 35px; /* Ajuste a largura do ícone conforme necessário */
+    height: 35px; /* Ajuste a altura do ícone conforme necessário */
+    vertical-align: middle; /* Alinha o ícone verticalmente no botão */
+}
+
+#btnTopo:hover {
+    background-color: #0056b3;
 }

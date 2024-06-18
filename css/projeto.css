@@ -1,0 +1,92 @@
+/* Estilos para a seção de projetos */
+#projects {
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f5f5f5; /* Fundo da seção */
+}
+
+.project {
+    display: flex;
+    margin-bottom: 20px; /* Espaçamento entre projetos */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    overflow: hidden; /* Para garantir que não haja sobreposição de conteúdo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os projetos */
+    background-color: #ffffff; /* Fundo branco dos projetos */
+}
+
+.project-content {
+    display: flex;
+    width: 100%; /* Para ocupar todo o espaço disponível */
+}
+
+.project-image {
+    flex-shrink: 0; /* Não redimensionar a imagem */
+    width: 200px; /* Largura fixa da miniatura */
+    height: 150px; /* Altura fixa da miniatura */
+    border-radius: 8px 0 0 8px; /* Arredondamento apenas no lado esquerdo */
+    overflow: hidden; /* Ocultar partes da imagem que ultrapassam o container */
+}
+
+.project-image img {
+    width: 100%; /* Ocupar todo o espaço disponível */
+    height: 100%; /* Ocupar toda a altura disponível */
+    object-fit: cover; /* Manter proporções e cortar a imagem para preencher o espaço */
+}
+
+.project-info {
+    flex: 1; /* Ocupar todo o espaço disponível */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.project h3 {
+    color: #007bff; /* Cor do título do projeto */
+}
+
+.project p {
+    color: #333333; /* Cor do texto descritivo */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.project a {
+    display: block;
+    margin-top: 10px; /* Espaçamento acima dos links */
+    text-decoration: none;
+    color: #007bff; /* Cor do link */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Sublinhar o link ao passar o mouse */
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do pai (.project) */
+    transition: transform 0.2s ease-in-out; /* Transição suave ao passar o mouse */
+}
+
+.project-link:hover {
+    transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
+}
+
+.project-link:hover .project-info h3 {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Empilhar os elementos em telas menores */
+    }
+
+    .project-image {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Altura automática para manter a proporção */
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem em telas menores */
+        border-radius: 8px 8px 0 0; /* Arredondar bordas apenas no topo em telas menores */
+        overflow: hidden; /* Esconder partes da imagem que ultrapassem o container */
+    }
+    .project-content {
+        padding: 20px; /* Espaçamento interno para o conteúdo em telas menores */
+        border-radius: 0 0 8px 8px; /* Arredondar bordas apenas na parte inferior em telas menores */
+        background-color: #ffffff; /* Fundo branco para separar visualmente os projetos */
+    }
+}

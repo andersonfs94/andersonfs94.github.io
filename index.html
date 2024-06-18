@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anderson Santana</title>
-    <link rel="stylesheet" href="./css/styles.css"> <!-- Estilo principal -->    
+    <link rel="stylesheet" href="./css/styles.css"> <!-- Estilo principal -->
+    <link rel="stylesheet" href="./css/projeto.css"> <!-- Estilo para a seção de projetos -->    
     <link rel="stylesheet" href="./css/responsividade.css"> <!-- Deixa a página responsiva -->
 </head>
 <body>
@@ -35,21 +36,24 @@
     </section>
     <section id="projects">
         <h2>Meus Projetos</h2>
+    
         <div class="project">
             <div class="project-content">
-                <div class="project-image">
-                    <img src="./img/identificador_fake_news.png" alt="Identificador de Fake News">
-                </div>
-                <div class="project-info">
-                    <a href="./html/projeto_fake_news.html"><h3>Identificador de Fake News em Python</h3></a>
-                    <p>
-                        Desenvolvi um projeto de Machine Learning para classificar notícias em verdadeiras (REAL) ou falsas (FAKE). <br>
-                        Utilizei dois datasets: um com notícias reais (True.csv) e outro com notícias falsas (Fake.csv), e implementei um classificador usando o algoritmo Passive Aggressive, que é eficiente para problemas de classificação binária e se adapta bem a grandes conjuntos de dados.</p>
-                    <a href='https://github.com/andersonfs94/Identificador_Fake_News' target="_blank">GitHub</a>
-                    <a href='https://colab.research.google.com/github/andersonfs94/Identificador_Fake_News/blob/main/Machine_Learning_Fake_News.ipynb' target="_blank">Colab</a>
-                </div>                
+                <a href="./html/projeto_fake_news.html" class="project-link">
+                    <div class="project-image">
+                        <img src="./img/identificador_fake_news.png" alt="Identificador de Fake News">
+                    </div>
+                    <div class="project-info">
+                        <h3>Identificador de Fake News em Python</h3>
+                        <p>Desenvolvi um projeto em Data Science utilizando Python para identificar notícias falsas. <br>
+                            Utilizei bibliotecas como Pandas, Sklearn, Matplotlib e Numpy para manipulação de dados e análise, demonstrando minha habilidade em machine learning e análise de dados.</p>
+                        <a href='https://github.com/andersonfs94/Identificador_Fake_News' target="_blank">GitHub</a>
+                        <a href='https://colab.research.google.com/github/andersonfs94/Identificador_Fake_News/blob/main/Machine_Learning_Fake_News.ipynb' target="_blank">Colab</a>
+                    </div>
+                </a>
             </div>
         </div>
+    
         <div class="project">
             <div class="project-content">
                 <div class="project-info">
@@ -62,6 +66,7 @@
             </div>
         </div>
     </section>
+    
     <section id="contact">
         <h2>Contato</h2>
         <p class="social-icon">

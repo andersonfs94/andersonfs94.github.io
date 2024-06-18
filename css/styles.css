@@ -39,15 +39,42 @@ section {
 }
 
 .project {
+    display: flex;
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar o projeto */
+}
+
+.project-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os elementos */
+    width: 100%;
+}
+
+.project-image {
+    flex-shrink: 0; /* Não redimensiona a imagem */
+    width: 200px; /* Largura fixa para a imagem miniatura */
+    height: 150px; /* Altura fixa para a imagem miniatura */
+    margin-right: 20px; /* Espaçamento à direita para separar da info */
+    border-radius: 8px; /* Arredondar bordas da imagem */
+    overflow: hidden; /* Esconder partes da imagem que ultrapassem o container */
+}
+
+.project-image img {
+    width: 100%; /* Garante que a imagem ocupe todo o espaço dentro de .project-image */
+    height: 100%; /* Garante que a imagem ocupe todo o espaço dentro de .project-image */
+    object-fit: cover; /* Mantém proporções e corta a imagem para preencher o espaço */
+}
+
+.project-info {
+    flex: 1; /* Ocupa todo o espaço disponível */
 }
 
 .project h3 {
     color: #022160; /* Cor do título do projeto */
+    margin-top: 0; /* Remove a margem superior padrão */
 }
 
 .project p {
@@ -66,10 +93,23 @@ section {
     text-decoration: underline; /* Sublinhar o link ao passar o mouse */
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    display: block;
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+
+    .project-image {
+        width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Altura automática para manter a proporção */
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem em telas menores */
+        border-radius: 8px 8px 0 0; /* Arredondar bordas apenas no topo em telas menores */
+    }
+
+    .project-info {
+        padding: 20px; /* Espaçamento interno para o conteúdo em telas menores */
+        border-radius: 0 0 8px 8px; /* Arredondar bordas apenas na parte inferior em telas menores */
+        background-color: #ffffff; /* Fundo branco para separar visualmente os projetos */
+    }
 }
 
 footer {

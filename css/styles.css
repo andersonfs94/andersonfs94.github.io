@@ -99,3 +99,8 @@ footer {
 #btnTopo:hover {
     background-color: #0056b3;
 }
+
+.label {
+    color: #fff; /* Cor branca */
+    font-weight: bold; /* Texto em negrito */
+}

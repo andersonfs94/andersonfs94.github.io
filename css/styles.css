@@ -122,3 +122,17 @@ footer {
     width: 100%;
     font-size: 0.8rem;
 }
+
+/* Reset de margens e paddings */
+.social-icon {
+    display: inline-block; /* Exibir em linha para ficarem lado a lado */
+    margin: 0; /* Remover margens */
+    padding: 0; /* Remover paddings */
+}
+
+/* Estilo para os ícones */
+.social-icon img {
+    width: 40px; /* Definir largura dos ícones */
+    height: auto; /* Altura automática para manter proporção */
+    margin-right: 10px; /* Margem à direita para separar os ícones */
+}

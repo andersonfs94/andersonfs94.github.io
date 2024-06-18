@@ -155,6 +155,11 @@ nav ul li a {
         flex-direction: column;
     }
 
+    .project-content {
+        flex-direction: column; /* Empilhar os elementos verticalmente */
+        align-items: center; /* Centralizar os itens no centro */
+    }
+
     .project-image {
         width: 100%;
         height: auto;

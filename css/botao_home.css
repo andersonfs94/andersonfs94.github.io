@@ -1,0 +1,31 @@
+/* Estilo para o botão de voltar para a home */
+.btn-home {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-home a {
+    display: inline-flex; /* Utiliza flexbox para alinhar itens */
+    flex-direction: column; /* Direção da coluna para colocar texto abaixo do ícone */
+    align-items: center; /* Alinha itens centralmente */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home a:hover {
+    background-color: #0056b3;
+}
+
+.btn-home a .icon {
+    margin-bottom: 5px; /* Espaçamento entre o ícone e o texto */
+    vertical-align: middle;
+}
+
+.btn-home a .label {
+    font-size: 0.8rem; /* Tamanho do texto da label */
+}

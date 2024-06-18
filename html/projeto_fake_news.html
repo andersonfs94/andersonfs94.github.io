@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etapas do Projeto</title>
+    <link rel="stylesheet" href="../css/styles.css">    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Etapas do Projeto Fake News</h1>
+             <!-- Botão para retornar à página inicial -->
+             <div class="btn-home">
+                <a href="../index.html">
+                    <img class="icon" src="https://img.icons8.com/?size=100&id=119784&format=png&color=000000" alt="Ícone Casa"><br>
+                    <span class="label">Voltar para a Página Inicial</span>
+                </a>
+            </div>
+        </header>
+
+        <section class="step">
+            <h2>Carregamento e Preparação dos Dados</h2>
+            <p>Carreguei dois datasets: um com notícias verdadeiras (True.csv) e outro com notícias falsas (Fake.csv).</p>
+            <p>Adicionei uma coluna de labels para identificar as notícias como 'REAL' ou 'FAKE'.</p>
+            <p>Combinei os datasets e embaralhei os dados para garantir a aleatoriedade.</p>
+            <p>Verifiquei a forma do DataFrame resultante, que contém um total de <span id="total-records">44898</span> registros.</p>
+        </section>
+
+        <section class="step">
+            <h2>Divisão dos Dados</h2>
+            <p>Separei o dataset em features (texto das notícias) e labels (classificações de FAKE ou REAL).</p>
+            <p>Dividi os dados em conjuntos de treino e teste, usando 70% dos dados para treino e 30% para teste, para avaliar o desempenho do modelo.</p>
+        </section>
+
+        <section class="step">
+            <h2>Transformação de Texto em Features</h2>
+            <p>Utilizei o TfidfVectorizer para converter os textos das notícias em uma matriz TF-IDF, o que ajudou a quantificar a importância das palavras nos textos.</p>
+        </section>
+
+        <section class="step">
+            <h2>Treinamento do Modelo</h2>
+            <p>Treinei um modelo de classificação Passive Aggressive usando os dados de treino transformados.</p>
+        </section>
+
+        <section class="step">
+            <h2>Avaliação do Modelo</h2>
+            <p>Avaliei o desempenho do modelo calculando a acurácia e gerando uma matriz de confusão, que ilustra a performance do classificador na distinção entre notícias verdadeiras e falsas.</p>
+            <p>A acurácia obtida foi de <span id="accuracy">99.3%</span>, indicando a eficácia do modelo.</p>
+        </section>
+
+        <section class="step">
+            <h2>Visualização</h2>
+            <p>Utilizei Seaborn para visualizar a matriz de confusão normalizada, facilitando a interpretação dos resultados do modelo.</p>
+        </section>
+        <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">
+            <img src="https://img.icons8.com/?size=35&id=24120&format=png&color=000000" alt="Voltar ao topo">
+        </button>
+        <footer>
+            <p>&copy; 2024 Anderson Santana</p>
+        </footer>
+    </div>
+</body>
+<script src="../javascript/botao_topo.js"></script>
+</html>

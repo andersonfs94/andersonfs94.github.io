@@ -1,0 +1,211 @@
+/* Estilos gerais para o corpo e os elementos principais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #022160;
+    color: #f5f5f5;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background: #1e1e1e;
+    color: #f5f5f5;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+/* Botão "Voltar ao Topo" */
+#btnTopo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#btnTopo img {
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
+}
+
+#btnTopo:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para a seção Sobre */
+#about {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #3a3a3c;
+    border-radius: 8px;
+    color: #f5f5f5;
+}
+
+/* Estilos para a seção Experiências */
+#experiences {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #3a3a3c;
+    border-radius: 8px;
+    color: #f5f5f5;
+}
+
+/* Estilos para a seção Projetos */
+#projects {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #3a3a3c;
+    border-radius: 8px;
+    color: #f5f5f5;
+}
+
+.project {
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.project-image {
+    flex-shrink: 0;
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project h3 {
+    color: #022160;
+    margin-top: 0;
+}
+
+.project p {
+    color: #333333;
+    line-height: 1.6;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para tornar a seção de projetos responsiva */
+    .project {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .project-info {
+        padding: 20px;
+        border-radius: 0 0 8px 8px;
+        background-color: #ffffff;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1e1e1e;
+    color: #f5f5f5;
+    width: 100%;
+    font-size: 0.8rem;
+    clear: both;
+}
+
+/* Estilos para o botão de voltar para a home */
+.btn-home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-home a {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-home a:hover {
+    background-color: #0056b3;
+}
+
+.btn-home a .icon {
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.btn-home a .label {
+    font-size: 0.8rem;
+}

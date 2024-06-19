@@ -18,17 +18,17 @@
 }
 
 .icon-link {
-    display: inline-flex; /* Usar flexbox para alinhar ícone e texto */
+    display: flex; /* Usar flexbox para alinhar ícone e texto */
     align-items: center; /* Alinhar itens ao centro verticalmente */
     text-decoration: none; /* Remover sublinhado dos links */
     color: #f5f5f5; /* Cor do texto */
-    margin: 0 10px; /* Espaçamento entre os links */
+    margin-right: 20px; /* Espaçamento entre os links */
 }
 
 .icon-link img {
-    width: 24px; /* Ajustar largura do ícone conforme necessário */
-    height: 24px; /* Ajustar altura do ícone conforme necessário */
-    margin-right: 8px; /* Espaçamento entre ícone e texto */
+    width: 40px; /* Ajustar largura do ícone conforme necessário */
+    height: auto; /* Altura automática para manter proporção */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
     vertical-align: middle; /* Alinha ícone verticalmente no centro */
 }
 

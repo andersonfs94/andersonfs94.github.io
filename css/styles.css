@@ -23,6 +23,10 @@ header {
     overflow: hidden; /* Impede conteúdo de ultrapassar a largura */
 }
 
+p {
+    text-align: justify;
+}
+
 nav ul {
     list-style: none;
     padding: 0;

@@ -15,7 +15,13 @@
 
 .project-content {
     display: flex;
-    width: 100%; /* Para ocupar todo o espaço disponível */
+    align-items: center;
+    width: 100%;
+}
+
+.project-info {
+    flex: 1;
+    padding-left: 20px; /* Espaçamento à esquerda para separar a imagem do texto */
 }
 
 .project-image {
@@ -30,11 +36,6 @@
     width: 100%; /* Ocupar todo o espaço disponível */
     height: 100%; /* Ocupar toda a altura disponível */
     object-fit: cover; /* Manter proporções e cortar a imagem para preencher o espaço */
-}
-
-.project-info {
-    flex: 1; /* Ocupar todo o espaço disponível */
-    padding: 20px; /* Espaçamento interno */
 }
 
 .project h3 {

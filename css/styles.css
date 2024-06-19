@@ -23,10 +23,6 @@ header {
     overflow: hidden; /* Impede conteúdo de ultrapassar a largura */
 }
 
-p {
-    text-align: justify;
-}
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -54,14 +50,12 @@ section {
 }
 
 footer {
-    text-align: center;
-    padding: 10px; /* Ajustado para melhor legibilidade */
+    padding: 10px;
     background: #1e1e1e;
     color: #f5f5f5;
-    margin-top: auto; /* Empurra o footer para o final do conteúdo */
-    bottom: 0;
-    max-width: 100%;
-    font-size: 0.8rem;    
+    width: 100%;
+    font-size: 0.8rem;
+    clear: both;
 }
 
 /* Reset de margens e paddings */
@@ -107,4 +101,39 @@ footer {
 .label {
     color: #fff; /* Cor branca */
     font-weight: bold; /* Texto em negrito */
+}
+
+.icon-link {
+    display: inline-flex; /* Usar flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinhar itens ao centro verticalmente */
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #f5f5f5; /* Cor do texto */
+    margin: 0 10px; /* Espaçamento entre os links */
+}
+
+.icon-link img {
+    width: 24px; /* Ajustar largura do ícone conforme necessário */
+    height: 24px; /* Ajustar altura do ícone conforme necessário */
+    margin-right: 8px; /* Espaçamento entre ícone e texto */
+    vertical-align: middle; /* Alinha ícone verticalmente no centro */
+}
+
+/* Efeitos ao passar o mouse nos links */
+.icon-link:hover {
+    text-decoration: underline; /* Sublinha o texto ao passar o mouse */
+}
+
+.icon-container {
+    margin-top: 10px; /* Espaçamento superior entre o texto do projeto e os ícones */
+    display: flex; /* Exibe os ícones lado a lado */
+    align-items: center; /* Alinha os ícones verticalmente */
+}
+
+.icon-container a {
+    display: inline-block; /* Exibe os ícones em bloco para ficarem abaixo do texto */
+    margin-right: 10px; /* Espaçamento horizontal entre os ícones */
+}
+
+.icon-container a img {
+    vertical-align: middle; /* Alinha verticalmente os ícones */
 }

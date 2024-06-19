@@ -32,8 +32,8 @@
     }
 
     #btnTopo img {
-        width: 25px; /* Reduz a largura do ícone */
-        height: 25px; /* Reduz a altura do ícone */
+        width: 15px; /* Reduz a largura do ícone */
+        height: 15px; /* Reduz a altura do ícone */
     }
 
     #btnTopo .label {

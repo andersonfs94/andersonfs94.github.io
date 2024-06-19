@@ -1,6 +1,7 @@
 /* Estilo para o botão de voltar para a home */
 .btn-home {
-    margin-top: 20px; /* Espaço superior */
+    text-align: center;
+    margin-top: 20px;
 }
 
 .btn-home a {

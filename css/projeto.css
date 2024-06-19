@@ -1,16 +1,20 @@
-/* Estilos para a seção de projetos */
+/* Estilos para a seção Projetos */
 #projects {
     padding: 20px; /* Espaçamento interno */
-    background-color: #f5f5f5; /* Fundo da seção */
+    margin: 2rem 0; /* Margem externa */
+    background: #3a3a3c; /* Fundo da seção */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    color: #f5f5f5; /* Cor do texto */
 }
 
 .project {
     display: flex;
-    margin-bottom: 20px; /* Espaçamento entre projetos */
-    border-radius: 8px; /* Arredondamento dos cantos */
-    overflow: hidden; /* Para garantir que não haja sobreposição de conteúdo */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os projetos */
     background-color: #ffffff; /* Fundo branco dos projetos */
+    padding: 20px; /* Espaçamento interno dos projetos */
+    border-radius: 8px; /* Arredondamento dos cantos */
+    margin-bottom: 20px; /* Espaçamento entre projetos */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os projetos */
+    overflow: hidden; /* Para garantir que não haja sobreposição de conteúdo */
 }
 
 .project-content {
@@ -40,6 +44,7 @@
 
 .project h3 {
     color: #007bff; /* Cor do título do projeto */
+    margin-top: 0; /* Remover margem superior do título */
 }
 
 .project p {
@@ -52,6 +57,7 @@
     margin-top: 10px; /* Espaçamento acima dos links */
     text-decoration: none;
     color: #007bff; /* Cor do link */
+    transition: transform 0.2s ease-in-out; /* Transição suave ao passar o mouse */
 }
 
 .project a:hover {
@@ -62,7 +68,6 @@
     display: block;
     text-decoration: none;
     color: inherit; /* Herda a cor do texto do pai (.project) */
-    transition: transform 0.2s ease-in-out; /* Transição suave ao passar o mouse */
 }
 
 .project-link:hover {
@@ -71,23 +76,4 @@
 
 .project-link:hover .project-info h3 {
     text-decoration: underline; /* Sublinha o texto ao passar o mouse */
-}
-
-@media (max-width: 768px) {
-    .project {
-        flex-direction: column; /* Empilhar os elementos em telas menores */
-    }
-
-    .project-image {
-        width: 100%; /* Ocupa toda a largura disponível */
-        height: auto; /* Altura automática para manter a proporção */
-        margin-bottom: 10px; /* Espaçamento abaixo da imagem em telas menores */
-        border-radius: 8px 8px 0 0; /* Arredondar bordas apenas no topo em telas menores */
-        overflow: hidden; /* Esconder partes da imagem que ultrapassem o container */
-    }
-    .project-content {
-        padding: 20px; /* Espaçamento interno para o conteúdo em telas menores */
-        border-radius: 0 0 8px 8px; /* Arredondar bordas apenas na parte inferior em telas menores */
-        background-color: #ffffff; /* Fundo branco para separar visualmente os projetos */
-    }
 }

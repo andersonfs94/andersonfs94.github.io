@@ -1,85 +1,3 @@
-/* Estilos para a seção Sobre */
-#about {
-    padding: 2rem;
-    margin: 2rem 0;
-    background: #3a3a3c;
-    border-radius: 8px;
-    color: #f5f5f5;
-}
-
-/* Estilos para a seção Experiências */
-#experiences {
-    padding: 2rem;
-    margin: 2rem 0;
-    background: #3a3a3c;
-    border-radius: 8px;
-    color: #f5f5f5;
-}
-
-/* Estilos para a seção Projetos */
-#projects {
-    padding: 2rem;
-    margin: 2rem 0;
-    background: #3a3a3c;
-    border-radius: 8px;
-    color: #f5f5f5;
-}
-
-.project {
-    display: flex;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.project-image {
-    flex-shrink: 0;
-    width: 200px;
-    height: 150px;
-    margin-right: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-info {
-    flex: 1;
-}
-
-.project h3 {
-    color: #022160;
-    margin-top: 0;
-}
-
-.project p {
-    color: #333333;
-    line-height: 1.6;
-}
-
-.project a {
-    display: block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {
     /* Estilos para tornar a seção de projetos responsiva */
@@ -88,8 +6,9 @@
     }
 
     .project-content {
-        flex-direction: column; /* Empilhar os elementos verticalmente */
-        align-items: center; /* Centralizar os itens no centro */
+        padding: 20px; /* Espaçamento interno para o conteúdo em telas menores */
+        border-radius: 0 0 8px 8px; /* Arredondar bordas apenas na parte inferior em telas menores */
+        background-color: #ffffff; /* Fundo branco para separar visualmente os projetos */
     }
 
     .project-image {
@@ -97,6 +16,7 @@
         height: auto;
         margin-bottom: 10px;
         border-radius: 8px 8px 0 0;
+        overflow: hidden; /* Esconder partes da imagem que ultrapassem o container */
     }
 
     .project-info {
@@ -119,35 +39,4 @@
     #btnTopo .label {
         font-size: 0.6rem; /* Reduz o tamanho da fonte da label */
     }
-}
-
-/* Estilos para o botão de voltar para a home */
-.btn-home {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.btn-home a {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn-home a:hover {
-    background-color: #0056b3;
-}
-
-.btn-home a .icon {
-    margin-bottom: 5px;
-    vertical-align: middle;
-}
-
-.btn-home a .label {
-    font-size: 0.8rem;
 }

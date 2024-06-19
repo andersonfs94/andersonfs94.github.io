@@ -66,15 +66,20 @@ footer {
     clear: both;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-/* Reset de margens e paddings */
+/* Estilo para os ícones */
 .social-icon {
     display: inline-block; /* Exibir em linha para ficarem lado a lado */
     margin: 0; /* Remover margens */
     padding: 0; /* Remover paddings */
 }
 
-/* Estilo para os ícones */
 .social-icon img {
     width: 40px; /* Definir largura dos ícones */
     height: auto; /* Altura automática para manter proporção */

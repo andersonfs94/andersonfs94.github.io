@@ -91,3 +91,53 @@ footer {
     color: #f5f5f5;
 }
 
+.experience-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap in the container */
+    gap: 20px; /* Space between each experience card */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 20px 0;
+}
+
+/* Individual experience item styling */
+.experience-item {
+    background-color: #1e1e1e; /* Matching the header/footer for consistency */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Flexbox for icon and content alignment */
+    align-items: center; /* Vertically center align items */
+    padding: 20px;
+    width: 100%; /* Responsive width */
+    max-width: 480px; /* Maximum width for each card */
+    margin: 0 auto; /* Center cards */
+    transition: transform 0.3s, background-color 0.3s; /* Smooth hover effect */
+}
+
+/* Hover effect for cards */
+.experience-item:hover {
+    transform: translateY(-5px); /* Lifts the card slightly on hover */
+    background-color: #2b2b2b; /* Slightly lighter background on hover */
+}
+
+/* Icon container styling */
+.experience-icon {
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    margin-right: 15px; /* Space between icon and content */
+}
+
+.experience-icon img {
+    width: 48px; /* Icon size */
+    height: 48px; /* Icon size */
+}
+
+/* Content area styling */
+.experience-content h3 {
+    color: #f5f5f5; /* Matches page color scheme */
+    font-size: 1.2em; /* Font size for headings */
+    margin-bottom: 8px; /* Space below heading */
+}
+
+.experience-content p {
+    color: #d1d1d1; /* Softer color for body text */
+    line-height: 1.6; /* Improved readability */
+}

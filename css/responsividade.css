@@ -39,4 +39,12 @@
     #btnTopo .label {
         font-size: 0.6rem; /* Reduz o tamanho da fonte da label */
     }
+
+    .experience-container {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+    .experience-item {
+        max-width: 100%; /* Full width for mobile */
+    }
 }

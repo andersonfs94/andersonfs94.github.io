@@ -197,3 +197,22 @@ footer {
     vertical-align: middle; /* Alinha verticalmente com o texto */
     margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
+
+/*Muda o botão trocar para inglês*/
+#language-toggle {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#language-toggle:hover {
+    background-color: #45a049; /* Darker green */
+}

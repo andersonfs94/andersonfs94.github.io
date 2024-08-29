@@ -12,26 +12,41 @@
 </head>
 <body>
     <header>
+        <button id="language-toggle" data-language="pt">Change to English</button>
         <h1>Anderson Santana</h1>
         <nav>
             <ul>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#experiences">Experiência</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+                <li>
+                    <a href="#about" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</a>
+                </li>
+                <li>
+                    <a href="#experiences" data-pt="Experiência" data-en="Experience">Experiência</a>
+                </li>
+                <li>
+                    <a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
+                </li>
+            </ul>            
         </nav>
     </header>   
     <section id="about">
-        <h2><img src="https://img.icons8.com/fluency/48/about-me.png" alt="about-me" class="social-icon">Sobre Mim</h2>
-        <p class="justificado">
+        <h2 data-pt="Sobre Mim" data-en="About Me"><img src="https://img.icons8.com/fluency/48/about-me.png" alt="about-me" class="social-icon">Sobre Mim</h2>
+        <p class="justificado" data-pt=" Sou Anderson Santana, um apaixonado por tecnologia e entusiasta em resolver problemas complexos através da programação e análise de dados. 
+        Minha jornada acadêmica em Ciência da Computação pela Unicarioca proporcionou uma base sólida em algoritmos, estruturas de dados e programação orientada a objetos.
+        Desde então, tenho dedicado minha carreira ao desenvolvimento de soluções inovadoras que combinam minha habilidade técnica com um forte entendimento das necessidades do usuário e do mercado." 
+        data-en="I am Anderson Santana, a technology enthusiast passionate about solving complex problems through programming and data analysis. 
+        My academic journey in Computer Science at Unicarioca provided a solid foundation in algorithms, data structures, and object-oriented programming.
+        Since then, I have dedicated my career to developing innovative solutions that combine my technical skills with a strong understanding of user and market needs.">
             Sou Anderson Santana, um apaixonado por tecnologia e entusiasta em resolver problemas complexos através da programação e análise de dados. 
             Minha jornada acadêmica em Ciência da Computação pela Unicarioca proporcionou uma base sólida em algoritmos, estruturas de dados e programação orientada a objetos.
             Desde então, tenho dedicado minha carreira ao desenvolvimento de soluções inovadoras que combinam minha habilidade técnica com um forte entendimento das necessidades do usuário e do mercado.
         </p>
     </section>
     <section id="experiences">
-        <h2>Minhas Experiências</h2>
+
+        <h2 data-pt="Minhas Experiências" data-en="My Experience">Minhas Experiências</h2>
         <div class="experience-container">
             <!-- Informática Instructor Experience -->
             <div class="experience-item">
@@ -39,9 +54,12 @@
                     <img src="https://img.icons8.com/fluency/48/000000/classroom.png" alt="Classroom Icon">
                 </div>
                 <div class="experience-content">
-                    <h3>Instrutor de Informática</h3>
-                    <p>Iniciei minha carreira como Instrutor de Informática, ensinando conceitos de Excel, Word, Access, HTML, PHP, JavaScript e SQL.</p>
-                    <p>2014-2016</p>
+                    <h3 data-pt="Instrutor de Informática" data-en="Informatics Instructor">Instrutor de Informática</h3>
+                    <p data-pt="Iniciei minha carreira como Instrutor de Informática, ensinando conceitos de Excel, Word, Access, HTML, PHP, JavaScript e SQL." 
+                       data-en="I started my career as an Informatics Instructor, teaching concepts of Excel, Word, Access, HTML, PHP, JavaScript, and SQL.">
+                        Iniciei minha carreira como Instrutor de Informática, ensinando conceitos de Excel, Word, Access, HTML, PHP, JavaScript e SQL.
+                    </p>
+                    <p data-pt="2014-2016" data-en="2014-2016">2014-2016</p>
                 </div>
             </div>
         
@@ -51,9 +69,12 @@
                     <img src="https://img.icons8.com/fluency/48/000000/technical-support.png" alt="Technical Support Icon">
                 </div>
                 <div class="experience-content">
-                    <h3>Suporte Técnico</h3>
-                    <p>Como profissional de Suporte Técnico, trabalhei diretamente com usuários para resolver problemas de hardware, software e rede.</p>
-                    <p>2019-Atualmente</p>
+                    <h3 data-pt="Suporte Técnico" data-en="Technical Support">Suporte Técnico</h3>
+                    <p data-pt="Trabalhei como Suporte Técnico, realizando a instalação, configuração e manutenção de sistemas e aplicativos, além de fornecer suporte ao usuário e gerenciar a infraestrutura de TI." 
+                    data-en="I worked as Technical Support, performing the installation, configuration, and maintenance of systems and applications, as well as providing user support and managing IT infrastructure.">
+                        Trabalhei como Suporte Técnico, realizando a instalação, configuração e manutenção de sistemas e aplicativos, além de fornecer suporte ao usuário e gerenciar a infraestrutura de TI.
+                    </p>
+                    <p data-pt="2020-Presente" data-en="2020-Present">2020-Presente</p>
                 </div>
             </div>
             
@@ -63,55 +84,93 @@
                     <img src="https://img.icons8.com/fluency/48/000000/web-design.png" alt="Web Development Icon">
                 </div>
                 <div class="experience-content">
-                    <h3>Projeto de Desenvolvimento Web</h3>
-                    <p>Participei de um projeto de desenvolvimento web onde utilizei tecnologias como HTML, CSS, JavaScript, PHP e MySQL.</p>
-                    <p>2022-Atualmente</p>
+                    <h3 data-pt="Projeto de Desenvolvimento Web" data-en="Web Development Project">Projeto de Desenvolvimento Web</h3>
+                    <p data-pt="Participei de um projeto de desenvolvimento web onde utilizei tecnologias como HTML, CSS, JavaScript, PHP e MySQL." 
+                    data-en="I participated in a web development project where I used technologies such as HTML, CSS, JavaScript, PHP, and MySQL.">
+                        Participei de um projeto de desenvolvimento web onde utilizei tecnologias como HTML, CSS, JavaScript, PHP e MySQL.
+                    </p>
+                    <p data-pt="2022-Atualmente" data-en="2022-Present">2022-Atualmente</p>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="courses">
-        <h2>Certificações e Cursos</h2>
+
+        <h2 data-pt="Certificações e Cursos" data-en="Certifications and Courses">Certificações e Cursos</h2>
         <div class="course-container">
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel Icon" class="course-icon">Curso de Excel</h3>
-                <p>Aprendi técnicas avançadas de análise de dados e visualização com Excel, aplicando fórmulas complexas, tabelas dinâmicas, macros e gráficos.</p>
-                <a href="https://cursos.alura.com.br/degree/certificate/0330a1d3-59f2-4e0b-a11b-9b2cf5c010ec?lang=pt_BR" target="_blank">Ver Certificado</a>
+                <h3 data-pt="Curso de Excel" data-en="Excel Course">
+                    <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel Icon" class="course-icon">
+                    Curso de Excel
+                </h3>
+                <p data-pt="Aprendi técnicas avançadas de análise de dados e visualização com Excel, aplicando fórmulas complexas, tabelas dinâmicas, macros e gráficos." data-en="Learned advanced data analysis and visualization techniques with Excel, applying complex formulas, pivot tables, macros, and charts.">
+                    Aprendi técnicas avançadas de análise de dados e visualização com Excel, aplicando fórmulas complexas, tabelas dinâmicas, macros e gráficos.
+                </p>
+                <a href="https://cursos.alura.com.br/degree/certificate/0330a1d3-59f2-4e0b-a11b-9b2cf5c010ec?lang=en" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>                
             </div>
+
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/external-SQL-file-extension-bearicons-outline-color-bearicons.png" alt="SQL Icon" class="course-icon">Curso de SQL</h3>
-                <p>Desenvolvi habilidades em consultas SQL avançadas, gerenciamento de banco de dados e otimização de desempenho.</p>
-                <a href="https://cursos.alura.com.br/degree/certificate/78c849aa-3d7f-4671-9377-fdd016363764?lang=pt_BR" target="_blank">Ver Certificado</a>
+
+                <h3 data-pt="Curso de SQL" data-en="SQL Course">
+                    <img src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/external-SQL-file-extension-bearicons-outline-color-bearicons.png" alt="SQL Icon" class="course-icon">
+                    Curso de SQL
+                </h3>
+                <p data-pt="Desenvolvi habilidades em consultas SQL avançadas, gerenciamento de banco de dados e otimização de desempenho." data-en="Developed skills in advanced SQL queries, database management, and performance optimization.">
+                    Desenvolvi habilidades em consultas SQL avançadas, gerenciamento de banco de dados e otimização de desempenho.
+                </p>
+                <a href="https://cursos.alura.com.br/degree/certificate/78c849aa-3d7f-4671-9377-fdd016363764?lang=en" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>                
             </div>
+
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/color/48/python--v1.png" alt="Python Icon" class="course-icon">Curso de Python para Data Science</h3>
-                <p>Explorei técnicas de análise de dados, aprendizado de máquina e visualização com Python.</p>
-                <a href="https://cursos.alura.com.br/degree/certificate/2ca02abe-d8ef-4bda-a311-6fcd498884bc?lang=pt_BR" target="_blank">Ver Certificado</a>
+                <h3 data-pt="Curso de Python para Data Science" data-en="Python for Data Science Course">
+                    <img src="https://img.icons8.com/color/48/python--v1.png" alt="Python Icon" class="course-icon">
+                    Curso de Python para Data Science
+                </h3>
+                <p data-pt="Explorei técnicas de análise de dados, aprendizado de máquina e visualização com Python." data-en="Explored data analysis techniques, machine learning, and visualization with Python.">
+                    Explorei técnicas de análise de dados, aprendizado de máquina e visualização com Python.
+                </p>
+                <a href="https://cursos.alura.com.br/degree/certificate/2ca02abe-d8ef-4bda-a311-6fcd498884bc?lang=en" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>
+
             </div>
+
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-data-science-data-analytics-flaticons-flat-circular-flat-icons.png" alt="DataScience Icon" class="course-icon">Curso de Data Science</h3>
-                <p>
+                <h3 data-pt="Curso de Data Science" data-en="Data Science Course">
+                    <img src="https://img.icons8.com/external-flaticons-flat-circular-flat-icons/64/external-data-science-data-analytics-flaticons-flat-circular-flat-icons.png" alt="DataScience Icon" class="course-icon">
+                    Curso de Data Science
+                </h3>
+                <p data-pt="Neste curso de Data Science, adquiri conhecimentos avançados em análise e visualização de dados, explorando técnicas essenciais para interpretar e apresentar informações de maneira eficaz." data-en="In this Data Science course, I gained advanced knowledge in data analysis and visualization, exploring essential techniques for interpreting and presenting information effectively.">
                     Neste curso de Data Science, adquiri conhecimentos avançados em análise e visualização de dados, explorando técnicas essenciais para interpretar e apresentar informações de maneira eficaz.
-                </p>                
-                <a href="https://cursos.alura.com.br/degree/certificate/a23195b0-4e23-4bb8-97bd-7e9c14e3f0b9?lang=pt_BR" target="_blank">Ver Certificado</a>
+                </p>
+                <a href="https://cursos.alura.com.br/degree/certificate/a23195b0-4e23-4bb8-97bd-7e9c14e3f0b9?lang=en" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>                
             </div>
+
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/fluency/48/power-bi-2021.png" alt="PowerBI Icon" class="course-icon">Curso de Power BI</h3>
-                <p>Aprendi a criar dashboards interativos e relatórios com Power BI, otimizando a visualização de dados e a tomada de decisões.</p>
-                <a href="https://cursos.alura.com.br/certificate/252ef207-53c5-42f4-94e1-280119df9b73?lang=pt_BR" target="_blank">Ver Certificado</a>
+                <h3 data-pt="Curso de Power BI" data-en="Power BI Course">
+                    <img src="https://img.icons8.com/fluency/48/power-bi-2021.png" alt="PowerBI Icon" class="course-icon">
+                    Curso de Power BI
+                </h3>
+                <p data-pt="Aprendi a criar dashboards interativos e relatórios com Power BI, otimizando a visualização de dados e a tomada de decisões." data-en="I learned to create interactive dashboards and reports with Power BI, optimizing data visualization and decision-making.">
+                    Aprendi a criar dashboards interativos e relatórios com Power BI, otimizando a visualização de dados e a tomada de decisões.
+                </p>
+                <a href="https://cursos.alura.com.br/certificate/252ef207-53c5-42f4-94e1-280119df9b73?lang=en" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>
             </div>
+
             <div class="course-item">
-                <h3><img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-courses-recruitment-agency-flaticons-flat-flat-icons-2.png" alt="Alura Icon" class="course-icon">Todos os Cursos Alura</h3>
-                <p>Todos os cursos feito pela Alura.</p>
-                <a href="https://cursos.alura.com.br/user/andersonfs94/fullCertificate/939ed2a28666d249db5b9f4bbff177e4" target="_blank">Ver Certificado</a>
+                <h3 data-pt="Todos os Cursos Alura" data-en="All Alura Courses">
+                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-courses-recruitment-agency-flaticons-flat-flat-icons-2.png" alt="Alura Icon" class="course-icon">
+                    Todos os Cursos Alura
+                </h3>
+                <p data-pt="Todos os cursos feito pela Alura." data-en="All courses done at Alura.">
+                    Todos os cursos feito pela Alura.
+                </p>
+                <a href="https://cursos.alura.com.br/user/andersonfs94/fullCertificate/939ed2a28666d249db5b9f4bbff177e4" target="_blank" data-pt="Ver Certificado" data-en="View Certificate">Ver Certificado</a>
             </div>            
         </div>
     </section>
 
     <section id="projects">
-        <h2>Meus Projetos</h2>    
+        <h2 data-pt="Meus Projetos" data-en="My Projects">Meus Projetos</h2>    
         <div class="project">
             <div class="project-content">
                 <a href="./html/projeto_fake_news.html" class="project-link" target="_blank">
@@ -119,8 +178,9 @@
                         <img src="./img/identificador_fake_news.png" alt="Identificador de Fake News">
                     </div>
                     <div class="project-info">
-                        <h3>Identificador de Fake News em Python</h3>
-                        <p>Desenvolvi um projeto em Data Science utilizando Python para identificar notícias falsas.</p>
+                        <h3 data-pt="Identificador de Fake News em Python" data-en="Fake News Identifier in Python">Identificador de Fake News em Python</h3>
+                        <p data-pt="Desenvolvi um projeto em Data Science utilizando Python para identificar notícias falsas." data-en="Developed a Data Science project using Python to identify fake news.">Desenvolvi um projeto em Data Science utilizando Python para identificar notícias falsas.</p>
+
                         <!-- Container para os ícones do GitHub e Colab -->
                         <div class="icon-container">
                             <a href='https://github.com/andersonfs94/Identificador_Fake_News' target="_blank" class="icon-link">
@@ -142,16 +202,19 @@
                     <img src="./img/gatito_dashboard.png" alt="Power BI Sales Dashboard" class="project-link">
                 </div>
                 <div class="project-info">
-                    <h3>Dashboard de Vendas no Power BI</h3>
-                    <p>Criei um dashboard interativo no Power BI para visualizar o desempenho mensal de vendas em diversas regiões.</p>
+                    <h3 data-pt="Dashboard de Vendas no Power BI" data-en="Sales Dashboard in Power BI">Dashboard de Vendas no Power BI</h3>
+                    <p data-pt="Criei um dashboard interativo no Power BI para visualizar o desempenho mensal de vendas em diversas regiões." data-en="I created an interactive Power BI dashboard to visualize monthly sales performance across various regions.">
+                        Criei um dashboard interativo no Power BI para visualizar o desempenho mensal de vendas em diversas regiões.
+                    </p>                    
                         <div class="icon-container">
                         <!-- Link to View the PDF Dashboard -->
                         <a href="./files/Gatito.pdf" target="_blank" class="icon-link">
                             <img src="https://img.icons8.com/color/48/pdf.png" alt="PDF">
                         </a>
-                        <a href="./files/Gatito.pbix" target="_blank" class="icon-link"> 
+                        <a href="./files/Gatito.pbix" target="_blank" class="icon-link">                             
                             <img src="https://img.icons8.com/fluency/48/power-bi-2021.png" alt="PowerBI">
-                            Clique aqui para baixar o arquivo pbix
+                            <text data-pt="Clique aqui para baixar o arquivo pbix"
+                            data-en="Click here to download the pbix file">Clique aqui para baixar o arquivo pbix </text>
                         </a>
                     </div>
                 </div>
@@ -159,7 +222,7 @@
         </div>        
     </section>            
     <section id="contact">
-        <h2>Contato</h2>
+        <h2 data-pt="Contato" data-en="Contact">Contato</h2>
         <p class="social-icon">
             <a href="https://www.linkedin.com/in/anderson-santana94/" target="_blank">
                 <img src="https://img.icons8.com/?size=500&id=13930&format=png&color=000000" alt="LinkedIn">
@@ -182,13 +245,22 @@
         <span class="label">Topo</span>
     </button>    
     <footer>
-        <p>&copy; 2024 Anderson Santana</p>
-        <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank">
-            <p class="social-icon">
-            <img src="https://img.icons8.com/?size=500&id=63777&format=png&color=000000" alt="GitHub"><br>Código Fonte
+        <p id="copyright">&copy; <span id="year"></span> Anderson Santana</p>
+        <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank" >
+            <p class="social-icon" >
+            <img src="https://img.icons8.com/?size=500&id=63777&format=png&color=000000" alt="GitHub"><br><text data-pt="Código Fonte" data-en="Source Code">Código Fonte</text>
             </p>
         </a>
     </footer>
     <script src="./javascript/botao_topo.js"></script>
+    <script src="./javascript/muda_idioma.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.getElementById('year');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>    
 </body>
 </html>

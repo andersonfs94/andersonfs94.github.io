@@ -37,6 +37,10 @@
     text-decoration: underline; /* Sublinha o texto ao passar o mouse */
 }
 
+.icon-link:hover, .social-icon:hover {
+    transform: translateY(-3px); /* Efeito de levantamento ao passar o mouse */
+}
+
 .icon-container {
     margin-top: 10px; /* Espaçamento superior entre o texto do projeto e os ícones */
     display: flex; /* Exibe os ícones lado a lado */

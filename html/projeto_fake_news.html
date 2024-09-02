@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etapas do Projeto</title>
+    <title data-pt="Etapas do Projeto" data-en="Project Stages">Etapas do Projeto</title>
     <link rel="stylesheet" href="../css/styles.css"> <!-- Estilo principal -->
     <link rel="stylesheet" href="../css/botao_home.css"> <!-- Estilo botão página inicial -->
     <link rel="stylesheet" href="../css/responsividade.css"> <!-- Deixa a página responsiva -->    
@@ -13,12 +13,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>Etapas do Projeto Fake News</h1>
+            <h1 data-pt="Etapas do Projeto Fake News" data-en="Project Stages: Fake News">Etapas do Projeto Fake News</h1>
             <!-- Botão para retornar à página inicial -->
+            <button id="language-toggle" data-language="pt" data-pt="Mudar para Inglês" data-en="Change to English">Mudar para Inglês</button>
             <div class="btn-home">
                 <a href="../index.html">
                     <img class="icon" src="https://img.icons8.com/?size=50&id=119784&format=png&color=000000" alt="Ícone Casa"><br>
-                    <span class="label">Voltar para a Página Inicial</span>
+                    <span class="label" data-pt="Voltar para a Página Inicial" data-en="Back to Home Page">Voltar para a Página Inicial</span>
                 </a>
             </div>
             <!-- Container para os ícones do GitHub e Colab -->
@@ -33,50 +34,50 @@
         </header>
 
         <section class="step">
-            <h2>Carregamento e Preparação dos Dados</h2>
-            <p>Carreguei dois datasets: um com notícias verdadeiras (True.csv) e outro com notícias falsas (Fake.csv).</p>
-            <p>Adicionei uma coluna de labels para identificar as notícias como 'REAL' ou 'FAKE'.</p>
-            <p>Combinei os datasets e embaralhei os dados para garantir a aleatoriedade.</p>
-            <p>Verifiquei a forma do DataFrame resultante, que contém um total de <span id="total-records">44898</span> registros.</p>
+            <h2 data-pt="Carregamento e Preparação dos Dados" data-en="Data Loading and Preparation">Carregamento e Preparação dos Dados</h2>
+            <p data-pt="Carreguei dois datasets: um com notícias verdadeiras (True.csv) e outro com notícias falsas (Fake.csv)." data-en="Loaded two datasets: one with true news (True.csv) and another with fake news (Fake.csv).">Carreguei dois datasets: um com notícias verdadeiras (True.csv) e outro com notícias falsas (Fake.csv).</p>
+            <p data-pt="Adicionei uma coluna de labels para identificar as notícias como 'REAL' ou 'FAKE'." data-en="Added a column of labels to identify the news as 'REAL' or 'FAKE'.">Adicionei uma coluna de labels para identificar as notícias como 'REAL' ou 'FAKE'.</p>
+            <p data-pt="Combinei os datasets e embaralhei os dados para garantir a aleatoriedade." data-en="Combined the datasets and shuffled the data to ensure randomness.">Combinei os datasets e embaralhei os dados para garantir a aleatoriedade.</p>
+            <p data-pt="Verifiquei a forma do DataFrame resultante, que contém um total de " data-en="Checked the shape of the resulting DataFrame, which contains a total of ">Verifiquei a forma do DataFrame resultante, que contém um total de <span id="total-records">44898</span> registros.</p>
         </section>
 
         <section class="step">
-            <h2>Divisão dos Dados</h2>
-            <p>Separei o dataset em features (texto das notícias) e labels (classificações de FAKE ou REAL).</p>
-            <p>Dividi os dados em conjuntos de treino e teste, usando 70% dos dados para treino e 30% para teste, para avaliar o desempenho do modelo.</p>
+            <h2 data-pt="Divisão dos Dados" data-en="Data Splitting">Divisão dos Dados</h2>
+            <p data-pt="Separei o dataset em features (texto das notícias) e labels (classificações de FAKE ou REAL)." data-en="Separated the dataset into features (news text) and labels (FAKE or REAL classifications).">Separei o dataset em features (texto das notícias) e labels (classificações de FAKE ou REAL).</p>
+            <p data-pt="Dividi os dados em conjuntos de treino e teste, usando 70% dos dados para treino e 30% para teste, para avaliar o desempenho do modelo." data-en="Split the data into training and testing sets, using 70% for training and 30% for testing to evaluate model performance.">Dividi os dados em conjuntos de treino e teste, usando 70% dos dados para treino e 30% para teste, para avaliar o desempenho do modelo.</p>
         </section>
 
         <section class="step">
-            <h2>Transformação de Texto em Features</h2>
-            <p>Utilizei o TfidfVectorizer para converter os textos das notícias em uma matriz TF-IDF, o que ajudou a quantificar a importância das palavras nos textos.</p>
+            <h2 data-pt="Transformação de Texto em Features" data-en="Text Transformation into Features">Transformação de Texto em Features</h2>
+            <p data-pt="Utilizei o TfidfVectorizer para converter os textos das notícias em uma matriz TF-IDF, o que ajudou a quantificar a importância das palavras nos textos." data-en="Used TfidfVectorizer to convert news texts into a TF-IDF matrix, helping quantify the importance of words in the texts.">Utilizei o TfidfVectorizer para converter os textos das notícias em uma matriz TF-IDF, o que ajudou a quantificar a importância das palavras nos textos.</p>
         </section>
 
         <section class="step">
-            <h2>Treinamento do Modelo</h2>
-            <p>Treinei um modelo de classificação Passive Aggressive usando os dados de treino transformados.</p>
+            <h2 data-pt="Treinamento do Modelo" data-en="Model Training">Treinamento do Modelo</h2>
+            <p data-pt="Treinei um modelo de classificação Passive Aggressive usando os dados de treino transformados." data-en="Trained a Passive Aggressive classifier model using the transformed training data.">Treinei um modelo de classificação Passive Aggressive usando os dados de treino transformados.</p>
         </section>
 
         <section class="step">
-            <h2>Avaliação do Modelo</h2>
-            <p>Avaliei o desempenho do modelo calculando a acurácia e gerando uma matriz de confusão, que ilustra a performance do classificador na distinção entre notícias verdadeiras e falsas.</p>
-            <p>A acurácia obtida foi de <span id="accuracy">99.3%</span>, indicando a eficácia do modelo.</p>
+            <h2 data-pt="Avaliação do Modelo" data-en="Model Evaluation">Avaliação do Modelo</h2>
+            <p data-pt="Avaliei o desempenho do modelo calculando a acurácia e gerando uma matriz de confusão, que ilustra a performance do classificador na distinção entre notícias verdadeiras e falsas." data-en="Evaluated the model's performance by calculating accuracy and generating a confusion matrix that illustrates the classifier's performance in distinguishing between true and fake news.">Avaliei o desempenho do modelo calculando a acurácia e gerando uma matriz de confusão, que ilustra a performance do classificador na distinção entre notícias verdadeiras e falsas.</p>
+            <p data-pt="A acurácia obtida foi de " data-en="The obtained accuracy was ">A acurácia obtida foi de <span id="accuracy">99.3%</span>, indicando a eficácia do modelo.</p>
         </section>
 
         <section class="step">
-            <h2>Visualização</h2>
-            <p>Utilizei Seaborn para visualizar a matriz de confusão normalizada, facilitando a interpretação dos resultados do modelo.</p>
+            <h2 data-pt="Visualização" data-en="Visualization">Visualização</h2>
+            <p data-pt="Utilizei Seaborn para visualizar a matriz de confusão normalizada, facilitando a interpretação dos resultados do modelo." data-en="Used Seaborn to visualize the normalized confusion matrix, making it easier to interpret the model's results.">Utilizei Seaborn para visualizar a matriz de confusão normalizada, facilitando a interpretação dos resultados do modelo.</p>
         </section>
         <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">
             <img src="https://img.icons8.com/?size=35&id=24120&format=png&color=000000" alt="Voltar ao topo"><br>
-            <span class="label">Topo</span>
+            <span class="label" data-pt="Topo" data-en="Top">Topo</span>
         </button>
         <footer>
             <p>&copy; 2024 Anderson Santana</p>
             <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank">
-                <img src="https://img.icons8.com/?size=30&id=63777&format=png&color=000000" alt="GitHub"><br>Código Fonte
+                <img src="https://img.icons8.com/?size=30&id=63777&format=png&color=000000" alt="GitHub"><br><span data-pt="Código Fonte" data-en="Source Code">Código Fonte</span>
             </a>
         </footer>
     </div>
 </body>
 <script src="../javascript/botao_topo.js"></script>
-</html>
+<script src="../javascript/muda_idioma_projeto.js"></script>

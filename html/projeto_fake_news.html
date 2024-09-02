@@ -72,7 +72,7 @@
             <span class="label" data-pt="Topo" data-en="Top">Topo</span>
         </button>
         <footer>
-            <p>&copy; 2024 Anderson Santana</p>
+            <p id="copyright">&copy; <span id="year"></span> Anderson Santana</p>
             <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank">
                 <img src="https://img.icons8.com/?size=30&id=63777&format=png&color=000000" alt="GitHub"><br><span data-pt="Código Fonte" data-en="Source Code">Código Fonte</span>
             </a>
@@ -81,3 +81,11 @@
 </body>
 <script src="../javascript/botao_topo.js"></script>
 <script src="../javascript/muda_idioma.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const yearSpan = document.getElementById('year');
+        if (yearSpan) {
+            yearSpan.textContent = new Date().getFullYear();
+        }
+    });
+</script>    

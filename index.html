@@ -241,27 +241,25 @@
     </section> 
     <!-- Botão "Voltar ao Topo" -->
     <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">
-        <img src="https://img.icons8.com/?size=500&id=24120&format=png&color=000000" alt="Voltar ao topo"><br>
+        <img src="https://img.icons8.com/?size=500&id=24120&format=png&color=000000" aria-label="Voltar ao topo"><br>
         <span class="label">Topo</span>
     </button>    
     <footer>
-        <p id="copyright">&copy; <span id="year"></span> Anderson Santana</p>
-        <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank" >
-            <p class="social-icon" >
-            <img src="https://img.icons8.com/?size=500&id=63777&format=png&color=000000" alt="GitHub"><br><text data-pt="Código Fonte" data-en="Source Code">Código Fonte</text>
-            </p>
-        </a>
-    </footer>
+        <p>&copy; <span id="year" data-pt="2024" data-en="2024"></span> Anderson Santana. Todos os direitos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#about" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</a></li>
+                <li><a href="#experiences" data-pt="Experiência" data-en="Experience">Experiência</a></li>
+                <li><a href="#projects" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+                <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>       
     <script src="./javascript/botao_topo.js"></script>
     <script src="./javascript/muda_idioma.js"></script>
     <script src="./javascript/muda_idioma_certificado.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const yearSpan = document.getElementById('year');
-            if (yearSpan) {
-                yearSpan.textContent = new Date().getFullYear();
-            }
-        });
-    </script>      
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>        
 </body>
 </html>

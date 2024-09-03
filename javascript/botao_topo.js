@@ -2,7 +2,7 @@
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (window.scrollY > 20) {
         document.getElementById("btnTopo").style.display = "block";
     } else {
         document.getElementById("btnTopo").style.display = "none";
@@ -11,6 +11,5 @@ function scrollFunction() {
 
 // Função para voltar ao topo da página
 function topFunction() {
-    document.body.scrollTop = 0; // Para navegadores Chrome, Firefox, IE e Opera
-    document.documentElement.scrollTop = 0; // Para Safari
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }

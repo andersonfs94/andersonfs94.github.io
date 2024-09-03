@@ -15,7 +15,7 @@
         <header>
             <h1 data-pt="Etapas do Projeto Fake News" data-en="Project Stages: Fake News">Etapas do Projeto Fake News</h1>
             <!-- Botão para retornar à página inicial -->
-            <button id="language-toggle" data-language="pt" data-pt="Mudar para Inglês" data-en="Change to Portuguese">Mudar para Inglês</button>
+            <button id="language-toggle" data-language="pt" data-pt="Mudar para Português" data-en="Change to English">Change to English</button>
             <div class="btn-home">
                 <a href="../index.html">
                     <img class="icon" src="https://img.icons8.com/?size=50&id=119784&format=png&color=000000" alt="Ícone Casa"><br>
@@ -72,20 +72,19 @@
             <span class="label" data-pt="Topo" data-en="Top">Topo</span>
         </button>
         <footer>
-            <p id="copyright">&copy; <span id="year"></span> Anderson Santana</p>
-            <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank">
-                <img src="https://img.icons8.com/?size=30&id=63777&format=png&color=000000" alt="GitHub"><br><span data-pt="Código Fonte" data-en="Source Code">Código Fonte</span>
+            <p data-pt="&copy; 2024 Anderson Santana. Todos os direitos reservados." data-en="&copy; 2024 Anderson Santana. All rights reserved.">
+                <span id="year">2024</span> Anderson Santana.
+            </p>        
+            <a href="https://github.com/andersonfs94/andersonfs94.github.io" target="_blank" >
+                <p class="social-icon" >
+                <img src="https://img.icons8.com/?size=500&id=63777&format=png&color=000000" alt="GitHub"><br><text data-pt="Código Fonte" data-en="Source Code">Código Fonte</text>
+                </p>
             </a>
-        </footer>
+        </footer> 
     </div>
 </body>
 <script src="../javascript/botao_topo.js"></script>
 <script src="../javascript/muda_idioma.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const yearSpan = document.getElementById('year');
-        if (yearSpan) {
-            yearSpan.textContent = new Date().getFullYear();
-        }
-    });
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>    

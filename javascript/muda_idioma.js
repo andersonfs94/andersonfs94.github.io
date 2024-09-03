@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const languageToggleButton = document.getElementById('language-toggle');
+    const btnTopo = document.getElementById('btnTopo');
 
-    if (!languageToggleButton) {
-        console.error('Language toggle button not found.');
+    if (!languageToggleButton || !btnTopo) {
+        console.error('Language toggle button or "Voltar ao topo" button not found.');
         return;
     }
 
@@ -30,4 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     languageToggleButton.textContent = (currentLanguage === 'pt') ? 'Change to English' : 'Mudar para o Português';
+
+    // Update the button text on page load
+    updateText(currentLanguage);
 });
